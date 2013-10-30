@@ -1,1 +1,13 @@
 This is where the Maze specification will go.
+
+create a room object with walls(booleans)
+
+generate a maze of rooms
+
+set two rooms as entrance and exit
+
+remove walls from the rooms to make ONE path
+	make sure not to remove edge walls
+
+create an iterator(adventurer) to 'walk' through the maze
+	north-south-east-west/left-straight-right-back movement loop
