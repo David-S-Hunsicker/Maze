@@ -8,6 +8,14 @@ set two rooms as entrance and exit
 
 remove walls from the rooms to make ONE path
 	make sure not to remove edge walls
-
+	put 'path'  rooms into a list
+	pick randomly from there, and remove a few more walls, to create additional dead-end paths.
+		deadend method will check to see if it's going to break a wall of a room in the solution path, and avoid it.
+	
+	
+	
 create an iterator(adventurer) to 'walk' through the maze
 	north-south-east-west/left-straight-right-back movement loop
+
+	
+	

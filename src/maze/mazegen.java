@@ -4,14 +4,14 @@ import java.util.ArrayList;
 
 public class mazegen {
 int rows,columns;
-int[][] maze;
+Room[][] maze;
 int disjrooms[];
 ArrayList<String> box = new ArrayList<String>();
 	
 	public mazegen(int s1,int s2){
 		rows = s1;
 		columns = s2;
-		maze = new int[s1+1][s2+1];
+		maze = new Room[s1+1][s2+1];
 		setRoomNames(maze);
 		disjrooms = new int[Roomsize(s1,s2)];
 		setdisrooms();
@@ -19,7 +19,7 @@ ArrayList<String> box = new ArrayList<String>();
 	}
 	
 	//Method that numbers the rooms array
-	public void setRoomNames(int[][] aray){
+	public void setRoomNames(Room[][] aray){
 		int g = 0;
 		for(int i=0;i<(rows+1);i++){
 			for(int k = 0;k<(columns+1);k++){

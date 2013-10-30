@@ -1,8 +1,10 @@
 package maze;
 
 public class Room {
+	private int x;
+	private int y;
 	private boolean	isEntrance = false;
-	private boolean isExit = false;
+	private boolean finalExit = false;
 	private boolean northExit = false;
 	private boolean eastExit = false;
 	private boolean westExit = false;
@@ -12,37 +14,42 @@ public class Room {
 	{
 	
 	}
+	public Room(int x, int y)
+	{
+	this.x=x;
+	this.y=y;
+	}
 	public boolean isEntrance() {
 		return isEntrance;
 	}
 	public void setEntrance(boolean isEntrance) {
 		this.isEntrance = isEntrance;
 	}
-	public boolean isExit() {
-		return isExit;
+	public boolean isFinalExit() {
+		return finalExit;
 	}
-	public void setExit(boolean isExit) {
-		this.isExit = isExit;
+	public void setFinalExit(boolean isFinalExit) {
+		this.finalExit = isFinalExit;
 	}
-	public boolean isNorthExit() {
+	public boolean hasNorthExit() {
 		return northExit;
 	}
 	public void setNorthExit(boolean northExit) {
 		this.northExit = northExit;
 	}
-	public boolean isEastExit() {
+	public boolean hasEastExit() {
 		return eastExit;
 	}
 	public void setEastExit(boolean eastExit) {
 		this.eastExit = eastExit;
 	}
-	public boolean isWestExit() {
+	public boolean hasWestExit() {
 		return westExit;
 	}
 	public void setWestExit(boolean westExit) {
 		this.westExit = westExit;
 	}
-	public boolean isSouthExit() {
+	public boolean hasSouthExit() {
 		return southExit;
 	}
 	public void setSouthExit(boolean southExit) {
@@ -53,6 +60,18 @@ public class Room {
 	}
 	public void setLast(Room last) {
 		this.last = last;
+	}
+	public int getX() {
+		return x;
+	}
+	public void setX(int x) {
+		this.x = x;
+	}
+	public int getY() {
+		return y;
+	}
+	public void setY(int y) {
+		this.y = y;
 	}
 	
 	
