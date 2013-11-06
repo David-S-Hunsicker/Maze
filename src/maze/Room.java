@@ -3,8 +3,6 @@ package maze;
 public class Room {
 	private int x;
 	private int y;
-	private boolean	isEntrance = false;
-	private boolean finalExit = false;
 	private boolean northExit = false;
 	private boolean eastExit = false;
 	private boolean westExit = false;
@@ -18,18 +16,6 @@ public class Room {
 	{
 	this.x=x;
 	this.y=y;
-	}
-	public boolean isEntrance() {
-		return isEntrance;
-	}
-	public void setEntrance(boolean isEntrance) {
-		this.isEntrance = isEntrance;
-	}
-	public boolean isFinalExit() {
-		return finalExit;
-	}
-	public void setFinalExit(boolean isFinalExit) {
-		this.finalExit = isFinalExit;
 	}
 	public boolean hasNorthExit() {
 		return northExit;
