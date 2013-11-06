@@ -7,6 +7,7 @@ public class Room {
 	private boolean eastExit = false;
 	private boolean westExit = false;
 	private boolean southExit = false;
+	private boolean visited = false;
 	Room last = new Room();
 	public Room()
 	{
@@ -16,6 +17,12 @@ public class Room {
 	{
 	this.x=x;
 	this.y=y;
+	}
+	public boolean getVisited(){
+		return visited;
+	}
+	public void setVisited(boolean bool){
+		visited = bool;
 	}
 	public boolean hasNorthExit() {
 		return northExit;
