@@ -7,6 +7,7 @@ public class Room {
 	private boolean eastExit = false;
 	private boolean westExit = false;
 	private boolean southExit = false;
+	private int roomNumber;
 	Room last = new Room();
 	public Room()
 	{
@@ -58,6 +59,12 @@ public class Room {
 	}
 	public void setY(int y) {
 		this.y = y;
+	}
+	public void setRoomNumber(int n){
+		roomNumber = n;
+	}
+	public int roomNumber(){
+		return RoomNumber;
 	}
 	
 	
