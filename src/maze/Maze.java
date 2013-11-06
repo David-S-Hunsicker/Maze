@@ -56,9 +56,10 @@ public mazeMaker(){
     curRoom = maze[0][0];
     rmNum= curRoom.roomNumber();
     //use a random generator to get either 1, 2, then 
-    //search all elements of roomNumber ArrayList, remove that number, or until no more elements.
+    //search all elements of roomNumber ArrayList,
+    //parse the number from the string
+    //remove that number, or until no more elements.
     
-    //search for the walls in the array list
     
     
     
