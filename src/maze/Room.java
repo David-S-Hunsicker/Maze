@@ -64,7 +64,7 @@ public class Room {
 		roomNumber = n;
 	}
 	public int roomNumber(){
-		return RoomNumber;
+		return roomNumber;
 	}
 	
 	
