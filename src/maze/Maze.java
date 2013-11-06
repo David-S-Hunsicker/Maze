@@ -5,22 +5,24 @@ Room[][] maze = new Room[][];
 Room finalExit;
 Room entrance;
 ArrayList<String> walls= new ArrayList<String>();
+int[] rmNmbr = new int[];
 private int x, y;
 
 
 public Maze(int rows, int columns){
-  x = rows;
-  y = columns;
-  Room[][] maze = new Room[x][y];
+  this.rows = rows;
+  this.columns = columns;
+  Room[][] maze = new Room[rows][columns];
+  int[] rmNums =[(rows*columns)]
+  
+  wallMaker();
+  roomNumbers();
 }
 
 
 
 
-public void mazeMaker(){
-//create the maze by setting up rooms to have exits
-Room curRoom = maze[x][y];
-entrance = curRoom;
+static private void wallMaker(){
 
 for (int i = 0, p = 1; p < maze.length; i ++, p++){
   walls.add(i+":"+p);
@@ -35,5 +37,23 @@ for (int i = 0, p = (y+1), p<maze.length; i ++, p ++){
 }
 
 
-}//end mazemaker
+}//end wallMaker
+
+public mazeMaker(){
+  int x,y;
+  
+  Room curRoom = maze[1][0];
+  entrance = curRoom;
+  
+  
+  
+  
+  
+  
+}//mazeMaker
+private void roomNumbers(){
+  for(int i = 0; i < rmNumbs.length; i++){
+    rmNumbs[i]= i;
+}//for
+
 }//end class
